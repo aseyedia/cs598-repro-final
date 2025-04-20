@@ -24,7 +24,7 @@ Run the following Docker command to open up the Jupyter Notebook server in the r
 ```bash
 docker run -it --rm -d --gpus all \
     -p 8888:8888 \
-    -v "/mnt/c/Users/artas/GitHub_Repos/cs598-repro-final:/home/jovyan/work"   \
+    -v "$PWD:/home/jovyan/work"   \
     -e JUPYTER_TOKEN=mysecrettoken \
     quay.io/jupyter/tensorflow-notebook:cuda-latest
 ```
