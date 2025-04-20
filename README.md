@@ -23,6 +23,7 @@ Run the following Docker command to open up the Jupyter Notebook server in the r
 
 ```bash
 docker run -it --rm \
+  -d \
   -p 8888:8888 \
   -v "$PWD:/home/jovyan/work" \
   -e JUPYTER_TOKEN=mytoken \
