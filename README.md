@@ -10,6 +10,15 @@ This repository contains our implementation and reproduction of the 2020 paper:
 
 ## Get Started
 
+Clone the repo into your desired directory:
+
+```bash
+git clone git@github.com:aseyedia/cs598-repro-final.git
+cd repo
+git submodule update --init
+git submodule update --recursive
+```
+
 Run the following Docker command to open up the Jupyter Notebook server in the repo directory:
 
 ```bash
