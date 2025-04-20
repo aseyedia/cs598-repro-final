@@ -14,7 +14,7 @@ Clone the repo into your desired directory:
 
 ```bash
 git clone git@github.com:aseyedia/cs598-repro-final.git
-cd repo
+cd cs598-repro-final/
 git submodule update --init
 git submodule update --recursive
 ```
