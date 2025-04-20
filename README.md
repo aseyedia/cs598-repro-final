@@ -22,10 +22,10 @@ git submodule update --recursive
 Run the following Docker command to open up the Jupyter Notebook server in the repo directory:
 
 ```bash
-docker run -it --rm -d --gpus all \
+docker run -it -d --gpus all \
     -p 8888:8888 \
-    -v "$PWD:/home/jovyan/work"   \
-    -e JUPYTER_TOKEN=mysecrettoken \
+    -v "/mnt/c/Users/artas/GitHub_Repos/cs598-repro-final:/home/jovyan/work" \
+    -e JUPYTER_TOKEN=***** \
     quay.io/jupyter/tensorflow-notebook:cuda-latest
 ```
 
