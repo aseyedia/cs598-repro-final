@@ -1,3 +1,6 @@
 [submodule "seizure-detection-neonates"]
 	path = seizure-detection-neonates
 	url = https://github.com/aseyedia/seizure-detection-neonates.git
+[submodule "tapani-matlab"]
+	path = tapani-matlab
+	url = https://github.com/ktapani/Neonatal_Seizure_Detection.git
