@@ -1,8 +1,8 @@
-#!/bin/bash
-docker run -it -d \
+docker run -d -it \
+  -p 8888:8888 \
   --gpus all \
   --env-file .env \
-  -p 8888:8888 \
-  -v "$PWD:/home/jovyan/work" \
-  neonatal-gpu
-
+  --env JUPYTER_TOKEN=$JUPYTER_TOKEN \
+  --env JUPYTER_PASSWORD=$JUPYTER_PASSWORD \
+  -v "$PWD:/workspace" \
+  neonatal-seizure:2020

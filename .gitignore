@@ -3,3 +3,6 @@
 *mat
 Ethics_approval.pdf
 .env
+*checkpoint*.ipynb
+*.ipynb_checkpoints
+.ipynb_checkpoints
